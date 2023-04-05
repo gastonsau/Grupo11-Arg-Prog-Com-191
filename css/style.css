@@ -1,0 +1,38 @@
+/*Letra Soho Green 'IM Fell English SC', serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+.encabezado {
+    font-style: 'IM Fell English SC', serif; color: darkgreen;
+}
+
+
+.carousel-caption {
+background-color: rgba(0, 0, 0, 0.30); 
+border-radius: 15px;
+}
+
+
+
+#servicios {
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+    padding-bottom: 2rem;
+    border-top: 1px solid lightslategray;
+    border-bottom: 1px solid lightslategray;
+  }
+
+#contacto {
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+    padding-bottom: 2rem;
+    border-top: 1px solid lightslategray;
+    border-bottom: 1px solid lightslategray;
+  }
+
+#nosotros {
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+    padding-bottom: 2rem;
+    border-top: 1px solid lightslategray;
+    border-bottom: 1px solid lightslategray; 
+  }
