@@ -35,6 +35,7 @@
         <div class="navbar-nav">
           <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
           <a class="nav-link" href="#servicios">Servicios</a>
+          <a class="nav-link" href="#solicitud">Solicitud</a>
           <a class="nav-link" href="#nosotros">Nosotros</a>
           <a class="nav-link" href="#contacto">Contacto</a>
         </div>
@@ -100,9 +101,136 @@
   <!--
     Sección Servicios
   -->
-  <section id="servicios">
+    <section id="servicios">
+    
+        <!--Articulo Principal-->
+    
+        <div class="container main-article">
+            <article class="row">
+                <h3 class="my-5 display-5"> Why Is Sustainable Gardening Important? </h3>
+                
+                <!--Columana de 8 derecha-->
+                <div class="col-lg-8">
+                    <h3 class="mt-5 mb-3">What Does It Mean to Be Sustainable?</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, dolorum tempore repellendus illo aut ipsam, quia molestias quis dolorem laborum laudantium rem cum quidem placeat repellat velit ut sit facilis!</p>
+                </div>
+            
+                <!--Columana de 4 derecha-->
+                <div class="col-lg-4">
+                    <h3 class="mt-5 mb-3">Importance of Sustainable Gardening</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga magnam rem mollitia perspiciatis dolores consequuntur velit laboriosam nisi reprehenderit ut laudantium aliquid numquam voluptas, assumenda ad, recusandae, labore accusamus sit.</p>
+                <div>
+                
+            </article>
+        </div>
 
-    <h1>Servicios</h1>
+    </section>
+
+  <!--
+    Sección Solicitud
+  -->
+
+  <section id="solicitud">
+    
+    <!-- Formulario para solicitar servicios -->
+    <div class="container">
+        <h3 class="my-3 display-5">Solicite un servicio </h3>
+        <div class="row justify-content-center">
+          <!-- Esto significa: ocupar las 12 columnas a partir de la resolución extra small (celulares o mobile) -->
+          <div class="col-sm-12 col-md-9 col-lg-6">
+  
+            <!-- Página 1 -->
+            <form id="formPag1">
+              <fieldset>
+                <legend class="mb-5 text-center">1- Ingrese sus datos</legend>
+                <div class="mb-3">
+                    <label for="fullName" class="form-label">Nombre completo</label>
+                    <input type="text" id="fullName" class="form-control">
+                  </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Correo electrónico</label>
+                  <input type="email" id="email" class="form-control" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Teléfono</label>
+                  <input type="tel" id="phone" class="form-control">
+                </div>
+
+              </fieldset>
+              <div class="d-flex justify-content-end">
+                <button type="button" id="btn-next-form1" class="btn-move btn">Siguiente</button>
+              </div>
+            </form>
+            <!-- Página 2 -->
+            <form id="formPag2" class="d-none">
+              <fieldset>
+                <legend class="mb-5 text-center">2- Ingrese datos del servicio</legend>
+                <div class="mb-3">
+                    <label for="type" class="form-label">Tipo</label>
+                    <select id="type" class="form-select" aria-label="Default select example">
+                        <option selected>Elija el tipo de servicio</option>
+                        <option value="1">Diseño de parque</option>
+                        <option value="2">Mantenimiento</option>
+                        <option value="3">Poda</option>
+                      </select>
+                </div>
+                <div class="mb-3">
+                  <label for="address" class="form-label">Dirección</label>
+                  <input type="text" id="address" class="form-control" aria-describedby="addressHelp"
+                    placeholder="Ingrese calle, nro., localidad y provincia">
+                  <div id="addressHelp" class="form-text">Indique la dirección</div>
+                </div>
+                <div class="mb-3">
+                  <label for="photoFile" class="form-label">Foto del parque</label>
+                  <input type="file" id="photoFile" class="form-control">
+                </div>
+
+              </fieldset>
+              <div class="d-flex justify-content-end">
+                <!-- <button type="button" id="btn-prev-form2" class="btn-move btn"><i class="fa-solid fa-circle-arrow-left fa-xl"></i></button>
+                <button type="button" id="btn-next-form2" class="btn-move btn"><i class="fa-solid fa-circle-arrow-right fa-xl"></i></button> -->
+                <button type="button" id="btn-prev-form2" class="btn-move btn">Anterior</button>
+                <button type="button" id="btn-next-form2" class="btn-move btn">Siguiente</button>
+              </div>
+            </form>
+            <!-- Página 3 -->
+            <form id="formPag3" class="d-none">
+              <fieldset>
+                <legend class="mb-5 text-center">3- Información adicional</legend>
+                <div class="mb-3">
+                    <label for="extraInfo" class="form-label">Aclaraciones</label>
+                    <textarea id="extraInfo" class="form-control" cols="30" rows="5"></textarea>
+                  </div>
+              </fieldset>
+              <div class="d-flex justify-content-end">
+                <!-- <button type="button" id="btn-prev-form3" class="btn-move btn"><i class="fa-solid fa-circle-arrow-left fa-xl"></i></button>
+                <button type="submit" id="btn-send" class="btn-move btn" disabled><i class="fa-solid fa-check fa-xl"></i></button> -->
+                <button type="button" id="btn-prev-form3" class="btn-move btn">Anterior</button>
+                <button type="submit" id="btn-send" class="btn-move btn" disabled data-bs-toggle="modal" data-bs-target="#modalForm">Enviar</button>
+              </div>
+            </form>
+  
+          </div>
+  
+        </div>
+        <!-- Ventana Modal del formulario -->
+        <div class="modal fade" id="modalForm" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalFormLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modalFormLabel">Confirmación</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modal-txt">
+                ...
+                </div>
+                <div class="modal-footer">
+
+                </div>
+            </div>
+            </div>
+        </div>
+      </div>
 
   </section>
 
@@ -110,7 +238,9 @@
     Sección Nosotros
   -->
   <section id="nosotros">
+
     <h1>Nosotros</h1>
+
   </section>
 
 </div>
@@ -122,6 +252,55 @@
     <h1>Contacto</h1>
   </section>
 
+  <footer>
+    <div class="container-fluid" style="background-color: black ;color: aliceblue;">
+      <div class="row">
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div>
+            <h5>Contact Us</h5>
+              <p class="mb-30 footer-desc">For us it really means "love for nature"
+                and we are ready to share it with you!</p>
+
+          </div>
+        </div>
+        <div class="col-xl-2 offset-xl-1 col-lg-2 col-md-6">
+          <div class="">
+            <h5>Address</h5>
+            
+            <ul class="list-unstyled">
+              <li>
+                
+                <p><i class="fa-solid fa-location-dot"></i> Av. Santa Fe 3265 CABA</p>
+              </li>
+              <li>
+                
+                <p><i class="fa-solid fa-phone"></i> 54 9 3125 5689</p>
+              </li>
+              <li>
+                
+                <p><i class="fa-regular fa-at fa-lg"></i> sohogreen@gmail.com</p>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6">
+            <h5>After sale service</h5>
+            <p>We are here to solve in the best way all the problems you may have with your plants</p>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6">
+            <h5>Home delivery</h5>
+            <p>We will contact you by whatsapp to coordinate the delivery of your orders</p>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+  
+        <div class="copyright">
+          <p>Developed by <a href="#" target="_blank"> Grupo 11 - Arg. Prog. - com. 191</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
 

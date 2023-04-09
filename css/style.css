@@ -17,15 +17,35 @@ border-radius: 15px;
 
 #servicios {
     margin-top: 4rem;
-    margin-bottom: 8rem;
+    margin-bottom: 2rem;
     padding-bottom: 2rem;
-    border-top: 1px solid lightslategray;
+    /* border-top: 1px solid lightslategray; */
     border-bottom: 1px solid lightslategray;
+  }
+
+#solicitud {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    /* border-top: 1px solid lightslategray; */
+    border-bottom: 1px solid lightslategray;
+    
+  }
+
+#solicitud form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 3%;
+    padding: 2rem;
+    box-shadow: 4px 4px 8px;
+    height: 550px;
+  
   }
 
 #contacto {
     margin-top: 4rem;
-    margin-bottom: 8rem;
+    margin-bottom: 2rem;
     padding-bottom: 2rem;
     border-top: 1px solid lightslategray;
     border-bottom: 1px solid lightslategray;
@@ -33,7 +53,7 @@ border-radius: 15px;
 
 #nosotros {
     margin-top: 4rem;
-    margin-bottom: 8rem;
+    margin-bottom: 2rem;
     padding-bottom: 2rem;
     border-top: 1px solid lightslategray;
     border-bottom: 1px solid lightslategray; 
