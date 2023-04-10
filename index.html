@@ -95,7 +95,7 @@
     </div>
     
 <div class="encabezado">
-    <h1 class="my-5 display-5">Soho Green</h1>
+    <h1 class="my-5 display-2">Soho Green</h1>
     <h2>Sustainable Gardening</h2>
     <h3>We create, restore and maintain gardens in an eco-friendly way</h3>
   </div>
@@ -153,9 +153,8 @@
     <div class="container">
         <h3 class="my-5 display-5">Request a service </h3>
         <div class="row justify-content-center">
-          <!-- Esto significa: ocupar las 12 columnas a partir de la resolución extra small (celulares o mobile) -->
+          
           <div class="col-sm-12 col-md-9 col-lg-6">
-  
             <!-- Página 1 -->
             <form id="formPag1">
               <fieldset>
@@ -175,7 +174,7 @@
 
               </fieldset>
               <div class="d-flex justify-content-end">
-                <button type="button" id="btn-next-form1" class="btn-move btn">Submit</button>
+                <button type="button" id="btn-next-form1" class="btn-move btn">Next</button>
               </div>
             </form>
             <!-- Página 2 -->
@@ -195,7 +194,7 @@
                   <label for="address" class="form-label">Address</label>
                   <input type="text" id="address" class="form-control" aria-describedby="addressHelp"
                     placeholder="Adress,apartment,zip code">
-                  <div id="addressHelp" class="form-text">Adress,city,state</div>
+                  <div id="addressHelp" class="form-text">Address,city,state</div>
                 </div>
                 <div class="mb-3">
                   <label for="photoFile" class="form-label">Park picture</label>
@@ -204,24 +203,20 @@
 
               </fieldset>
               <div class="d-flex justify-content-end">
-                <!-- <button type="button" id="btn-prev-form2" class="btn-move btn"><i class="fa-solid fa-circle-arrow-left fa-xl"></i></button>
-                <button type="button" id="btn-next-form2" class="btn-move btn"><i class="fa-solid fa-circle-arrow-right fa-xl"></i></button> -->
                 <button type="button" id="btn-prev-form2" class="btn-move btn">Back</button>
-                <button type="button" id="btn-next-form2" class="btn-move btn">Submit</button>
+                <button type="button" id="btn-next-form2" class="btn-move btn">Next</button>
               </div>
             </form>
             <!-- Página 3 -->
             <form id="formPag3" class="d-none">
               <fieldset>
-                <legend class="mb-5 text-center">3- Aditional Information</legend>
+                <legend class="mb-5 text-center">3- Additional Information</legend>
                 <div class="mb-3">
                     <label for="extraInfo" class="form-label">Your message</label>
                     <textarea id="extraInfo" class="form-control" cols="30" rows="5"></textarea>
                   </div>
               </fieldset>
               <div class="d-flex justify-content-end">
-                <!-- <button type="button" id="btn-prev-form3" class="btn-move btn"><i class="fa-solid fa-circle-arrow-left fa-xl"></i></button>
-                <button type="submit" id="btn-send" class="btn-move btn" disabled><i class="fa-solid fa-check fa-xl"></i></button> -->
                 <button type="button" id="btn-prev-form3" class="btn-move btn">Back</button>
                 <button type="submit" id="btn-send" class="btn-move btn" disabled data-bs-toggle="modal" data-bs-target="#modalForm">Send</button>
               </div>
