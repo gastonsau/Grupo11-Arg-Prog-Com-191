@@ -33,11 +33,11 @@
       <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
 
         <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
-          <a class="nav-link" href="#servicios">Servicios</a>
-          <a class="nav-link" href="#solicitud">Solicitud</a>
-          <a class="nav-link" href="#nosotros">Nosotros</a>
-          <a class="nav-link" href="#contacto">Contacto</a>
+          <a class="nav-link active" aria-current="page" href="#inicio">Welcome</a>
+          <a class="nav-link" href="#servicios">Service</a>
+          <a class="nav-link" href="#solicitud">Request</a>
+          <a class="nav-link" href="#nosotros">About</a>
+          <a class="nav-link" href="#contacto">Contact</a>
         </div>
 
         <div class="ms-5 py-2">        
@@ -49,11 +49,7 @@
     </nav>
   </div>
 
-  <div class="encabezado">
-    <h1>Soho Green</h1>
-    <h2>Sustainable Gardening</h2>
-    <h3>We create, restore and maintain gardens in an eco-friendly way</h3>
-  </div>
+  
 
 
   <!--Carrusel fotos Texto -->
@@ -97,7 +93,12 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-
+    
+<div class="encabezado">
+    <h1 class="my-5 display-5">Soho Green</h1>
+    <h2>Sustainable Gardening</h2>
+    <h3>We create, restore and maintain gardens in an eco-friendly way</h3>
+  </div>
   <!--
     Sección Servicios
   -->
@@ -112,13 +113,29 @@
                 <!--Columana de 8 derecha-->
                 <div class="col-lg-8">
                     <h3 class="mt-5 mb-3">What Does It Mean to Be Sustainable?</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, dolorum tempore repellendus illo aut ipsam, quia molestias quis dolorem laborum laudantium rem cum quidem placeat repellat velit ut sit facilis!</p>
+                    <p>Sustainability means meeting our own needs without
+                      compromising the ability of future generations to meet their
+                      own needs. In addition to natural resources, we also need social
+                      and economic resources. Sustainability is not just environmentalism. Embedded in most definitions of sustainability we also find
+                      concerns for social equity and economic development.
+                      While the concept of sustainability is a relatively new idea, the
+                      movement as a whole has roots in social justice, conservationism,
+                      internationalism and other past movements with rich histories.
+                      By the end of the twentieth centuries, many of these ideas had
+                      come together in the call for ‘sustainable development.’
+                      Universal human rights and basic necessities are attainable
+                      by all people, who have access to enough resources in order
+                      to keep their families and communities healthy and secure.
+                      Healthy communities have just leaders who ensure personal,
+                      labour and cultural rights are respected and all people are
+                      protected from discrimination.
+                      </p>
                 </div>
             
                 <!--Columana de 4 derecha-->
                 <div class="col-lg-4">
                     <h3 class="mt-5 mb-3">Importance of Sustainable Gardening</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga magnam rem mollitia perspiciatis dolores consequuntur velit laboriosam nisi reprehenderit ut laudantium aliquid numquam voluptas, assumenda ad, recusandae, labore accusamus sit.</p>
+                    <p>Home gardeners can be an important part of the solution to climate change by using sustainable practices. Sustainable gardening and landscaping techniques can slow future warming by reducing carbon emissions and increasing carbon storage in soil and plants. In addition, you can adapt your gardens and green spaces and make them more resilient to climate change by adding native plant diversity, improving soil health, growing heat tolerant vegetable crops, and using stormwater management practices.</p>
                 <div>
                 
             </article>
@@ -134,7 +151,7 @@
     
     <!-- Formulario para solicitar servicios -->
     <div class="container">
-        <h3 class="my-3 display-5">Solicite un servicio </h3>
+        <h3 class="my-5 display-5">Request a service </h3>
         <div class="row justify-content-center">
           <!-- Esto significa: ocupar las 12 columnas a partir de la resolución extra small (celulares o mobile) -->
           <div class="col-sm-12 col-md-9 col-lg-6">
@@ -142,46 +159,46 @@
             <!-- Página 1 -->
             <form id="formPag1">
               <fieldset>
-                <legend class="mb-5 text-center">1- Ingrese sus datos</legend>
+                <legend class="mb-5 text-center">1- Personal Information</legend>
                 <div class="mb-3">
-                    <label for="fullName" class="form-label">Nombre completo</label>
+                    <label for="fullName" class="form-label">Full name</label>
                     <input type="text" id="fullName" class="form-control">
                   </div>
                 <div class="mb-3">
-                  <label for="email" class="form-label">Correo electrónico</label>
+                  <label for="email" class="form-label">Email</label>
                   <input type="email" id="email" class="form-control" aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
-                  <label for="phone" class="form-label">Teléfono</label>
+                  <label for="phone" class="form-label">Phone</label>
                   <input type="tel" id="phone" class="form-control">
                 </div>
 
               </fieldset>
               <div class="d-flex justify-content-end">
-                <button type="button" id="btn-next-form1" class="btn-move btn">Siguiente</button>
+                <button type="button" id="btn-next-form1" class="btn-move btn">Submit</button>
               </div>
             </form>
             <!-- Página 2 -->
             <form id="formPag2" class="d-none">
               <fieldset>
-                <legend class="mb-5 text-center">2- Ingrese datos del servicio</legend>
+                <legend class="mb-5 text-center">2- Service Information</legend>
                 <div class="mb-3">
-                    <label for="type" class="form-label">Tipo</label>
+                    <label for="type" class="form-label">Service</label>
                     <select id="type" class="form-select" aria-label="Default select example">
-                        <option selected>Elija el tipo de servicio</option>
-                        <option value="1">Diseño de parque</option>
-                        <option value="2">Mantenimiento</option>
-                        <option value="3">Poda</option>
+                        <option selected>Chose your type</option>
+                        <option value="1">Park design</option>
+                        <option value="2">Maintenance</option>
+                        <option value="3">Pruning</option>
                       </select>
                 </div>
                 <div class="mb-3">
-                  <label for="address" class="form-label">Dirección</label>
+                  <label for="address" class="form-label">Address</label>
                   <input type="text" id="address" class="form-control" aria-describedby="addressHelp"
-                    placeholder="Ingrese calle, nro., localidad y provincia">
-                  <div id="addressHelp" class="form-text">Indique la dirección</div>
+                    placeholder="Adress,apartment,zip code">
+                  <div id="addressHelp" class="form-text">Adress,city,state</div>
                 </div>
                 <div class="mb-3">
-                  <label for="photoFile" class="form-label">Foto del parque</label>
+                  <label for="photoFile" class="form-label">Park picture</label>
                   <input type="file" id="photoFile" class="form-control">
                 </div>
 
@@ -189,24 +206,24 @@
               <div class="d-flex justify-content-end">
                 <!-- <button type="button" id="btn-prev-form2" class="btn-move btn"><i class="fa-solid fa-circle-arrow-left fa-xl"></i></button>
                 <button type="button" id="btn-next-form2" class="btn-move btn"><i class="fa-solid fa-circle-arrow-right fa-xl"></i></button> -->
-                <button type="button" id="btn-prev-form2" class="btn-move btn">Anterior</button>
-                <button type="button" id="btn-next-form2" class="btn-move btn">Siguiente</button>
+                <button type="button" id="btn-prev-form2" class="btn-move btn">Back</button>
+                <button type="button" id="btn-next-form2" class="btn-move btn">Submit</button>
               </div>
             </form>
             <!-- Página 3 -->
             <form id="formPag3" class="d-none">
               <fieldset>
-                <legend class="mb-5 text-center">3- Información adicional</legend>
+                <legend class="mb-5 text-center">3- Aditional Information</legend>
                 <div class="mb-3">
-                    <label for="extraInfo" class="form-label">Aclaraciones</label>
+                    <label for="extraInfo" class="form-label">Your message</label>
                     <textarea id="extraInfo" class="form-control" cols="30" rows="5"></textarea>
                   </div>
               </fieldset>
               <div class="d-flex justify-content-end">
                 <!-- <button type="button" id="btn-prev-form3" class="btn-move btn"><i class="fa-solid fa-circle-arrow-left fa-xl"></i></button>
                 <button type="submit" id="btn-send" class="btn-move btn" disabled><i class="fa-solid fa-check fa-xl"></i></button> -->
-                <button type="button" id="btn-prev-form3" class="btn-move btn">Anterior</button>
-                <button type="submit" id="btn-send" class="btn-move btn" disabled data-bs-toggle="modal" data-bs-target="#modalForm">Enviar</button>
+                <button type="button" id="btn-prev-form3" class="btn-move btn">Back</button>
+                <button type="submit" id="btn-send" class="btn-move btn" disabled data-bs-toggle="modal" data-bs-target="#modalForm">Send</button>
               </div>
             </form>
   
@@ -236,7 +253,7 @@
 
   <!--
     Sección Nosotros
-  -->
+  
   <section id="nosotros">
 
     <h1>Nosotros</h1>
@@ -244,14 +261,14 @@
   </section>
 
 </div>
-
+-->
   <!--
     Sección Contacto
-  -->
+  
   <section id="contacto">
     <h1>Contacto</h1>
   </section>
-
+-->
   <footer>
     <div class="container-fluid" >
       <div class="row footercomp">
