@@ -14,7 +14,6 @@ border-radius: 15px;
 }
 
 
-
 #servicios {
     margin-top: 4rem;
     margin-bottom: 2rem;
@@ -28,7 +27,7 @@ border-radius: 15px;
     margin-bottom: 2rem;
     padding-bottom: 2rem;
     /* border-top: 1px solid lightslategray; */
-    border-bottom: 1px solid lightslategray;
+    /* border-bottom: 1px solid lightslategray; */
     
   }
 
@@ -51,12 +50,88 @@ border-radius: 15px;
     border-bottom: 1px solid lightslategray;
   }
 
-#nosotros {
+#equipo {
     margin-top: 4rem;
     margin-bottom: 2rem;
     padding-bottom: 2rem;
     border-top: 1px solid lightslategray;
-    border-bottom: 1px solid lightslategray; 
+    color:#313437;
+    background-color:#eef4f7;
+  }
+  
+  #equipo p {
+    color:#7d8285;
+  }
+  
+  #equipo h2 {
+    font-weight:bold;
+    margin-bottom:40px;
+    padding-top:40px;
+    color:inherit;
+  }
+  
+  @media (max-width:767px) {
+    #equipo h2 {
+      margin-bottom:25px;
+      padding-top:25px;
+      font-size:24px;
+    }
+  }
+  
+ #equipo .persona {
+    padding:50px 0;
+  }
+  
+  #equipo .item {
+    text-align:center;
+  }
+  
+  #equipo .item .box {
+    text-align:center;
+    padding:30px;
+    background-color:#fff;
+    margin-bottom:30px;
+  }
+  
+  #equipo .item .name {
+    font-weight:bold;
+    margin-top:28px;
+    margin-bottom:8px;
+    color:inherit;
+  }
+  
+  #equipo .item .title {
+    text-transform:uppercase;
+    font-weight:bold;
+    color:#d0d0d0;
+    letter-spacing:2px;
+    font-size:13px;
+  }
+  
+  #equipo .item .description {
+    font-size:15px;
+    margin-top:15px;
+    margin-bottom:20px;
+  }
+  
+  #equipo .item img {
+    max-width:160px;
+  }
+  
+  #equipo .social {
+    font-size:18px;
+    color:#a2a8ae;
+  }
+  
+  #equipo .social a {
+    color:inherit;
+    margin:0 10px;
+    display:inline-block;
+    opacity:0.7;
+  }
+  
+  #equipo .social a:hover {
+    opacity:1;
   }
 
   .footercomp{
