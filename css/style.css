@@ -1,6 +1,6 @@
 /* Css */
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
-
+ 
 
 .encabezado {
     font-family: 'IM Fell English SC', serif;
@@ -137,6 +137,7 @@ border-radius: 15px;
   .footercomp{
     padding-top: 2rem;
     font-family: 'IM Fell English SC', serif;
-    background-color: black ;
+    /* background-color: black ; */
+    background-color: rgba(0, 0, 0, 0.808) ;
     color: aliceblue;
   }
