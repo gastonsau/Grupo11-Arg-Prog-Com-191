@@ -50,6 +50,26 @@ border-radius: 15px;
     border-bottom: 1px solid lightslategray;
   }
 
+#multistep {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  /* border-top: 1px solid lightslategray; */
+  /* border-bottom: 1px solid lightslategray; */
+
+}
+
+#multistep form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 3%;
+    padding: 2rem;
+    box-shadow: 4px 4px 8px;
+    height: 550px;
+
+}
+
 #equipo {
     margin-top: 4rem;
     margin-bottom: 2rem;
