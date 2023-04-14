@@ -1,5 +1,7 @@
 // Java Script
 
+
+
 // -------------------------------------------------------------------
 // FORMULARIO SERVICIOS
 // -------------------------------------------------------------------
@@ -26,15 +28,20 @@ const photoFile = document.getElementById("photoFile");
 const extraInfoServ = document.getElementById("extraInfoServ");
 
 
+
+
 // Función que maneja la botonera
 function handleForms(e){
     e.preventDefault();
-
+    var msgAlerttxt = document.getElementById("msgAlert");
     // Chequea que haya cargado el mail para poder enviar el formulario
     if (emailServ.value !== "" && fullNameServ.value !== "" && phoneServ.value !== "" && type.value !== "" && address.value !== "") {
         btnFormServ[btnFormServ.length-1].removeAttribute('disabled');
+        msgAlerttxt.classList.toggle("d-none");
+        
     }else{
         btnFormServ[btnFormServ.length-1].setAttribute('disabled','')
+        msgAlerttxt.innerHTML = "Falta completar algunos campos";
     }
 
    switch (e.target.id){
