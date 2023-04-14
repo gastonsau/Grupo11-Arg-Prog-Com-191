@@ -18,8 +18,6 @@ border-radius: 15px;
     margin-top: 4rem;
     margin-bottom: 2rem;
     padding-bottom: 2rem;
-    /* border-top: 1px solid lightslategray; */
-    /* border-bottom: 1px solid lightslategray; */
   }
 
 
@@ -38,37 +36,8 @@ border-radius: 15px;
     padding: 2rem;
     box-shadow: 4px 4px 8px;
     height: 550px;
-
-        padding: 15px;
-  background-color: rgba(255, 255, 255, 0.8);
-  
-  }
-
-#contacto {
-    margin-top: 0rem;
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
-    border-top: 1px solid lightslategray;
-    border-bottom: 1px solid lightslategray;
-  }
-
-#multistep {
-  margin-top: 4rem;
-  margin-bottom: 2rem;
-  padding-bottom: 2rem;
-
-}
-
-#multistep form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-radius: 3%;
-    padding: 2rem;
-    box-shadow: 4px 4px 8px;
-    height: 550px;
-
-}
+    background-color: rgba(255, 255, 255, 0.8); 
+ }
 
 #equipo {
     margin-top: 0rem;

@@ -41,7 +41,7 @@ function handleForms(e){
         
     }else{
         btnFormServ[btnFormServ.length-1].setAttribute('disabled','')
-        msgAlerttxt.innerHTML = "Falta completar algunos campos";
+        msgAlerttxt.innerHTML = "There are incomplete required fields (*). Please complete them.";
     }
 
    switch (e.target.id){
@@ -76,13 +76,13 @@ function handleSend(){
     var modaltxt = document.getElementById("modal-txt");
     var typeTxt = type.options[type.selectedIndex].text;
 
-    modaltxt.innerHTML = `Se ha enviado el formulario con la siguiente información:<br> 
-    Nombre: ${fullNameServ.value}<br> 
-    emailServ: ${emailServ.value}<br> 
-    Tel.: ${phoneServ.value}<br> 
-    Tipo.: ${typeTxt}<br> 
-    Foto: ${photoFile.value}<br> 
-    Info Adic.: ${extraInfoServ.value}<br> 
+    modaltxt.innerHTML = `The form was sent successfully:<br> 
+    Full Name: ${fullNameServ.value}<br> 
+    Email    : ${emailServ.value}<br> 
+    Phone    : ${phoneServ.value}<br> 
+    Type     : ${typeTxt}<br> 
+    Photo    : ${photoFile.value}<br> 
+    Add. Info: ${extraInfoServ.value}<br> 
     `;
     resetFormsServ();
 }
@@ -93,92 +93,5 @@ function resetFormsServ(){
     form03.reset();
 }
 
-
-
-
-
-// --------------------------------------------------------------------------------------------------
-// -------------------------------------------------------------------
-// FORMULARIO CONTACTO
-// -------------------------------------------------------------------
-
-// Obtener info p�ginas de formulario
-const form1 = document.getElementById("step1");
-const form2 = document.getElementById("step2");
-const form3 = document.getElementById("step3");
-
-// Obtener info botones de formulario
-const btnForm = document.getElementsByClassName("btn-form");
-for (let i = 0; i < btnForm.length; i++){
-    btnForm[i].addEventListener("click", handleMultiStep);
-}
-// Referencia de los campos
-const email = document.getElementById("email");
-const phone = document.getElementById("phone");
-const fullName =document.getElementById("fullName");
-const locationInput = document.getElementById("location");
-const extraInfo = document.getElementById("extrainfo");
-const disclaimer = document.getElementById("disclaimer");
-const check = document.getElementById("check");
-check.addEventListener ("change", function () {
-    btnForm[btnForm.length - 1].toggleAttribute ("disabled");
-});
-
-
-function handleMultiStep(e) {
-    switch (e.target.id) {
-        case"btn-sig-form1":
-          form1.classList.toggle("d-none");
-          form2.classList.toggle("d-none");
-          break;
-        case"btn-prev-form2":
-          form2.classList.toggle("d-none");
-          form1.classList.toggle("d-none");
-          break;
-        case"btn-sig-form2":
-          form2.classList.toggle("d-none");
-          form3.classList.toggle("d-none");
-          break;
-        case"btn-prev-form3":
-          form3.classList.toggle("d-none");
-          form2.classList.toggle("d-none");
-          break;
-        case"btn-submit":
-          form3.classList.toggle("d-none");
-          form1.classList.toggle("d-none");
-          handleSubmit();
-          break;
-        default:
-          break;    
-    }
-}
-
-function handleSubmit() {
-    // template strings
-    console.log(`
-    datos para procesar form
-    - - - 
-    /datos pesonales/
-    email: ${email.value} 
-    phone: ${phone.value} 
-    fullName: ${fullName.value} 
-
-    /mensaje/
-    Ubicacion: ${locationInput.value}   
-    Info extra: ${extraInfo.value} 
-
-    /acuerdo/
-    acuerdo: ${disclaimer.value} 
-    firrma: ${check.checked} 
-    `);
-    resetForms()
-  }
-    
-function resetForms() {
-    form1.reset();
-    form2.reset();
-    form3.reset();
-    btnForm[btnForm.length - 1].toggleAttribute ("disabled");
-}
 
 
