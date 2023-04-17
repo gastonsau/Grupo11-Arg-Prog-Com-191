@@ -13,14 +13,14 @@ background-color: rgba(0, 0, 0, 0.30);
 border-radius: 15px;
 }
 
-
+/* Servicios */
 #servicios {
     margin-top: 4rem;
     margin-bottom: 2rem;
     padding-bottom: 2rem;
   }
 
-
+/* Solicitud */
 #solicitud {
     margin-top: 0rem;
     margin-bottom: 0rem;
@@ -39,13 +39,45 @@ border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.8); 
  }
 
- 
+/* Shop */
+#shop {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid lightslategray;
+  color:#313437;
+}
+
+#shop .producto {
+  padding:50px 0;
+
+}
+
+#shop .item {
+  text-align:center;
+  
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#shop .item .box {
+  text-align:center;
+  padding:30px;
+  background-color:#eef4f7;
+  margin-bottom:30px;
+}
+
  #shop .btn {
   background-color: rgba(0, 110, 255, 0.658);
 }
 
+#shop .item img {
+  max-width:220px;
+  max-height:220px;
+}
 
 
+/* Equipo */
 #equipo {
     margin-top: 0rem;
     margin-bottom: 0rem;
